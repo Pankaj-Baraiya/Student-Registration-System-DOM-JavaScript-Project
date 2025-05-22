@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-image: url('gradient.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2{
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+form input {
+    padding: 8px;
+    width: 200px;
+}
+
+form button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.table-container {
+    background-color: rgb(164, 164, 164);
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid black;
+}
+
+table {
+    margin-left: 10px;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+button.edit,
+button.delete {
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+button.edit {
+    background-color: rgb(255, 213, 0);
+    color: white;
+}
+
+button.delete {
+    background-color: red;
+    color: white;
+}

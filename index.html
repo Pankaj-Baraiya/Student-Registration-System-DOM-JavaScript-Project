@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Table head ,meta tag and catchy title -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<!--body with  heading and brief description-->
+
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <p>This system allows users to register student details including name, ID, email, and contact number.
+            Users can view, edit, and delete student records with real-time updates. Data is stored in local storage
+            to ensure persistence even after the page is refreshed.</p>
+    </header>
+    <!--Input form-->
+    <main>
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Student Name" required />
+            <input type="number" id="studentId" placeholder="Student ID" required />
+            <input type="email" id="email" placeholder="Email ID" required />
+            <input type="tel" id="contact" placeholder="Contact No." required />
+            <button type="submit">Register</button>
+        </form>
+        <!--section with data storage-->
+        <section>
+            <h2>Registered Students</h2>
+            <div class="table-container">
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Student ID</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
